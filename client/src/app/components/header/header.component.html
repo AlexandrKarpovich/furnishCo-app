@@ -1,0 +1,42 @@
+<header class="bg-white shadow-sm">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold"><a routerLink="/"> FURNISH CO </a></div>
+
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a
+            class="text-gray-700"
+            routerLink="/" routerLinkActive="active">Главная</a></li>
+        <li><a
+            class="text-gray-700"
+            routerLink="/catalog" routerLinkActive="active">Каталог</a></li>
+<!--        <li><a-->
+<!--            class="text-gray-700"-->
+<!--            routerLink="/delivery" routerLinkActive="active">Доставка</a></li>-->
+<!--        <li><a-->
+<!--            class="text-gray-700"-->
+<!--            routerLink="/contacts" routerLinkActive="active">Контакты</a></li>-->
+      </ul>
+    </nav>
+
+    <div class="actions flex space-x-4">
+      <div class="phone text-gray-700">
+        <a class="hover:underline" href="tel:+79006776867">+7 900 677 68 67</a>
+      </div>
+      <div class="search  text-gray-700">
+        <img src="/assets/search.svg" alt="">
+        <!--        <input type="text" placeholder="Поиск" class="px-2 py-1 text-black">-->
+      </div>
+      <div class="wishlist text-gray-700">
+        <a href="#" class="hover:underline">
+          <img src="/assets/wishlist.svg" alt="">
+        </a>
+      </div>
+      <div class="cart text-gray-700">
+        <a [routerLink]="['/cart']" class="hover:underline">
+          <img src="/assets/cart.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

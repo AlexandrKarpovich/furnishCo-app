@@ -1,0 +1,110 @@
+.hero {
+  background: url('/assets/main-page.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background: #c89c87;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.features {
+  background: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.sale {
+  background: #ddd;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.sale h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.sale p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.products {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.product {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,58 @@
+<main class="container mx-auto px-4 py-8">
+  <div class="mb-4">
+    <a href="#" class="text-gray-500">Главная</a> • <span class="text-gray-500">Каталог</span>
+  </div>
+
+  <div class="flex">
+    <aside class="w-1/4 pr-4">
+      <h3 class="text-xl font-bold mb-4">Категории</h3>
+      <ul class="space-y-2 mb-6">
+        <li><a href="#" class="text-gray-700">Все</a></li>
+        <li><a href="#" class="text-gray-700">Диваны и кресла</a></li>
+        <li><a href="#" class="text-gray-700">Стулья и столы</a></li>
+        <li><a href="#" class="text-gray-700">Шкафы и стеллажи</a></li>
+        <li><a href="#" class="text-gray-700">Кровати</a></li>
+        <li><a href="#" class="text-gray-700">Зеркала</a></li>
+        <li><a href="#" class="text-gray-700">Лампы и торшеры</a></li>
+        <li><a href="#" class="text-gray-700">Декор и цветы</a></li>
+      </ul>
+
+      <h3 class="text-xl font-bold mb-4">Цена</h3>
+      <input type="range" min="700" max="150000" value="700" class="w-full mb-6">
+
+      <h3 class="text-xl font-bold mb-4">Материал</h3>
+      <!-- Material filter options here -->
+
+      <h3 class="text-xl font-bold mb-4">Стиль</h3>
+      <!-- Style filter options here -->
+    </aside>
+
+    <div class="w-3/4">
+      <div class="flex justify-between items-center mb-6">
+        <div class="text-lg font-bold">Каталог</div>
+        <div>
+          <label for="sort" class="text-gray-700">Сортировать по:</label>
+          <select id="sort" class="ml-2 p-2 border border-gray-300 rounded">
+            <option value="popularity">Популярности</option>
+            <option value="price">Цене</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 gap-6">
+        <!-- Product Items -->
+        <div class="bg-white p-4 rounded shadow" *ngFor="let product of products">
+          <a [routerLink]="['/product', product.id]">
+            <img [src]="product.image" [alt]="product.name" class="w-full h-48 object-cover mb-4">
+            <div class="text-lg font-bold">{{ product.name }}</div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mt-6 text-center">
+        <button class="bg-gray-700 text-white py-2 px-4 rounded">Показать еще</button>
+      </div>
+    </div>
+  </div>
+</main>

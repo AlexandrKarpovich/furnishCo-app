@@ -1,0 +1,82 @@
+<!-- Cart Page Component -->
+<div class="cart container mx-auto p-6 bg-white">
+  <div class="breadcrumbs text-sm text-gray-500 mb-4">
+    <a href="#" class="hover:text-gray-800">Главная</a> >
+    <a href="#" class="hover:text-gray-800">Каталог</a> >
+    <span class="text-gray-800">Корзина</span>
+  </div>
+
+  <h1 class="text-2xl font-bold mb-4">Корзина</h1>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2">
+      <table class="w-full text-left border-collapse">
+        <thead>
+        <tr>
+          <th class="py-2">Товар</th>
+          <th class="py-2">Цена</th>
+          <th class="py-2">Кол-во</th>
+          <th class="py-2">Итого</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="border-t">
+          <td class="py-2 flex items-center">
+            <img src="path-to-product-image.jpg" alt="Product" class="w-20 h-20 mr-4">
+            <span>Стул Ellan</span>
+          </td>
+          <td class="py-2">12 000 ₽</td>
+          <td class="py-2">
+            <div class="flex items-center">
+              <button class="px-2 py-1">-</button>
+              <input type="text" value="1" class="w-12 text-center">
+              <button class="px-2 py-1">+</button>
+            </div>
+          </td>
+          <td class="py-2">12 000 ₽</td>
+        </tr>
+        <!-- Add more products similarly -->
+        </tbody>
+      </table>
+      <div class="mt-4 text-right">
+        <button class="text-red-600 hover:underline">Очистить корзину</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="border p-4">
+        <div class="flex justify-between mb-2">
+          <span>Товары (4)</span>
+          <span>32 500 ₽</span>
+        </div>
+        <div class="flex justify-between mb-2">
+          <span>Скидка</span>
+          <span>-2 750 ₽</span>
+        </div>
+        <div class="mb-4">
+          <input type="text" placeholder="Введите промокод" class="w-full p-2 border">
+          <button class="mt-2 w-full bg-gray-800 text-white py-2">Применить</button>
+        </div>
+        <div class="flex justify-between font-bold text-xl">
+          <span>Итого</span>
+          <span>29 750 ₽</span>
+        </div>
+        <button class="mt-4 w-full bg-gray-800 text-white py-2">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-8">
+    <h2 class="text-xl font-bold mb-4">Вам могут понравиться</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="product-item bg-white p-4 border rounded-md">
+        <img src="path-to-related-product1.jpg" alt="Цветок" class="w-full h-auto">
+        <h3 class="text-lg font-semibold mt-2">Цветок</h3>
+        <p class="text-gray-800 font-bold">4 800 ₽</p>
+        <button class="bg-gray-800 text-white px-4 py-2 mt-2">В корзину</button>
+      </div>
+      <!-- Add more related products similarly -->
+    </div>
+  </div>
+</div>
+

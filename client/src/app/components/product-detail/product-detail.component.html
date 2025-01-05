@@ -1,0 +1,75 @@
+<div class="product-card container mx-auto p-6 bg-white">
+  <div class="breadcrumbs text-sm text-gray-500 mb-4">
+    <a href="#" class="hover:text-gray-800">Главная</a> >
+    <a href="#" class="hover:text-gray-800">Каталог</a> >
+    <a href="#" class="hover:text-gray-800">Стулья</a> >
+    <span class="text-gray-800">Стул Ellan</span>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="product-images">
+<!--      <img src="/assets/product-detail-1.jpg" alt="Стул Ellan" class="w-full h-auto">-->
+      <!-- Product Card Component -->
+      <div *ngIf="product" class="product-detail">
+<!--        <h2 class="text-2xl font-bold mb-4">{{ product.name }}</h2>-->
+        <img [src]="product.image" [alt]="product.name" class="w-full h-auto object-cover mb-4">
+<!--        <p>{{ product.description }}</p>-->
+      </div>
+
+      <div class="thumbnails mt-4 flex space-x-4">
+        <img src="/assets/product-detail-2.jpg" alt="Стул Ellan" class="w-20 h-20">
+        <img src="/assets/product-detail-3.jpg" alt="Стул Ellan" class="w-20 h-20">
+        <img src="/assets/product-detail-4.jpg" alt="Стул Ellan" class="w-20 h-20">
+      </div>
+    </div>
+    <div class="product-details">
+      <h1 class="text-2xl font-bold mb-2">Стул Ellan</h1>
+      <div class="flex items-center mb-4">
+        <span class="text-yellow-400">★★★★★</span>
+        <span class="ml-2 text-sm text-gray-500">5.0 9 отзывов</span>
+      </div>
+      <p class="text-xl font-semibold mb-4">12 000 ₽</p>
+      <div class="product-info text-sm text-gray-600 mb-4">
+        <p>Габариты (ШхГхВ): 90х85х90</p>
+        <p>Материал ножек: Массив дуба</p>
+        <p>Обивка: Ткань</p>
+        <a href="#" class="text-blue-600 hover:underline">Все характеристики</a>
+      </div>
+      <div class="product-actions flex items-center space-x-4 mb-4">
+        <button class="bg-gray-800 text-white px-4 py-2">Добавить в корзину</button>
+        <button class="border border-gray-800 text-gray-800 px-4 py-2">Добавить в избранное</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews mt-8">
+    <h2 class="text-xl font-bold mb-4">Отзывы (8)</h2>
+    <div class="review-list grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div class="review bg-gray-100 p-4 rounded-md">
+        <div class="flex items-center mb-2">
+          <img src="path-to-reviewer1.jpg" alt="Reviewer" class="w-10 h-10 rounded-full">
+          <div class="ml-2">
+            <span class="font-semibold">Светлана</span>
+            <span class="block text-sm text-gray-500">13.03.2023</span>
+          </div>
+        </div>
+        <p>Отличный стул, идеально вписался в интерьер.</p>
+      </div>
+      <!-- Add more reviews similarly -->
+    </div>
+    <a href="#" class="text-blue-600 hover:underline mt-4 block">Смотреть все отзывы</a>
+  </div>
+
+  <div class="related-products mt-8">
+    <h2 class="text-xl font-bold mb-4">Похожие товары</h2>
+    <div class="product-list grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="product-item bg-white p-4 border rounded-md">
+        <img src="path-to-related-product1.jpg" alt="Стул Eleor" class="w-full h-auto">
+        <h3 class="text-lg font-semibold mt-2">Стул Eleor</h3>
+        <p class="text-gray-800 font-bold">14 000 ₽</p>
+        <button class="bg-gray-800 text-white px-4 py-2 mt-2">В корзину</button>
+      </div>
+      <!-- Add more related products similarly -->
+    </div>
+  </div>
+</div>

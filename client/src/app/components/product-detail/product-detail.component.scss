@@ -1,0 +1,116 @@
+//@import 'tailwindcss/base';
+//@import 'tailwindcss/components';
+//@import 'tailwindcss/utilities';
+//
+//.product-card {
+//  .breadcrumbs a {
+//    color: #888;
+//    @apply hover:text-gray-800;
+//  }
+//
+//  .breadcrumbs span {
+//    color: #aaa;
+//  }
+//
+//  .product-images {
+//    img {
+//      @apply w-full h-auto;
+//    }
+//
+//    .thumbnails img {
+//      @apply w-20 h-20 mt-4;
+//    }
+//  }
+//
+//  .product-details {
+//    h1 {
+//      @apply text-2xl font-bold mb-2;
+//    }
+//
+//    .product-info {
+//      p {
+//        @apply text-sm text-gray-600 mb-1;
+//      }
+//
+//      a {
+//        @apply text-blue-600 hover:underline;
+//      }
+//    }
+//
+//    .product-actions button {
+//      @apply px-4 py-2;
+//    }
+//
+//    .product-actions .bg-gray-800 {
+//      @apply text-white;
+//    }
+//
+//    .product-actions .border {
+//      @apply border border-gray-800 text-gray-800;
+//    }
+//  }
+//
+//  .reviews {
+//    h2 {
+//      @apply text-xl font-bold mb-4;
+//    }
+//
+//    .review-list {
+//      @apply grid grid-cols-1 lg:grid-cols-2 gap-4;
+//
+//      .review {
+//        @apply bg-gray-100 p-4 rounded-md;
+//
+//        .flex {
+//          @apply items-center mb-2;
+//
+//          img {
+//            @apply w-10 h-10 rounded-full;
+//          }
+//
+//          div {
+//            @apply ml-2;
+//
+//            span:first-child {
+//              @apply font-semibold;
+//            }
+//
+//            span:last-child {
+//              @apply block text-sm text-gray-500;
+//            }
+//          }
+//        }
+//      }
+//    }
+//  }
+//
+//  .related-products {
+//    h2 {
+//      @apply text-xl font-bold mb-4;
+//    }
+//
+//    .product-list {
+//      @apply grid grid-cols-1 lg:grid-cols-3 gap-4;
+//
+//      .product-item {
+//        @apply bg-white p-4 border rounded-md;
+//
+//        img {
+//          @apply w-full h-auto;
+//        }
+//
+//        h3 {
+//          @apply text-lg font-semibold mt-2;
+//        }
+//
+//        p {
+//          @apply text-gray-800 font-bold;
+//        }
+//
+//        button {
+//          @apply bg-gray-800 text-white px-4 py-2 mt-2;
+//        }
+//      }
+//    }
+//  }
+//}
